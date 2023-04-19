@@ -27,12 +27,12 @@ class StripeHelper {
       //STEP 2: Initialize Payment Sheet
       await Stripe.instance
           .initPaymentSheet(
-              paymentSheetParameters: SetupPaymentSheetParameters(
-                  paymentIntentClientSecret: paymentIntent![
-                      'client_secret'], //Gotten from payment intent
-                  style: ThemeMode.light,
-                  merchantDisplayName: 'Sabir Dev',
-                  googlePay: gpay))
+          paymentSheetParameters: SetupPaymentSheetParameters(
+              paymentIntentClientSecret: paymentIntent![
+              'client_secret'], //Gotten from payment intent
+              style: ThemeMode.light,
+              merchantDisplayName: 'Sabir Dev',
+              googlePay: gpay))
           .then((value) {});
 
       //STEP 3: Display Payment sheet
@@ -48,7 +48,7 @@ class StripeHelper {
       await Stripe.instance.presentPaymentSheet().then((value) async {
         bool value = await FirebaseFirestoreHelper.instance
             .uploadOrderedProductFirebase(
-                appProvider.getBuyProductList, context, "Paid");
+            appProvider.getBuyProductList, context, "Paid");
 
         appProvider.clearBuyProduct();
         if (value) {
@@ -59,7 +59,7 @@ class StripeHelper {
         }
       });
     } catch (e) {
-       showMessage(e.toString());
+      showMessage(e.toString());
     }
   }
 
@@ -74,7 +74,7 @@ class StripeHelper {
         Uri.parse('https://api.stripe.com/v1/payment_intents'),
         headers: {
           'Authorization':
-              'Bearer sk_test_51MWx8OAVMyklfe3C3gP4wKOhTsRdF6r1PYhhg1PqupXDITMrV3asj5Mmf0G5F9moPL6zNfG3juK8KHgV9XNzFPlq00wmjWwZYA',
+          'Bearer sk_test_51MyaRZJoORLyqI9bazWVfsC6dfck9Sk70dQ68F5YBvA0loqJoW9H9PpvM8rijGQ5J6xdLnzBsToJIPtTOutjt7Eg00ecPCqyv2',
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: body,

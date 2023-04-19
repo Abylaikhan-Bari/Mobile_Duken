@@ -278,7 +278,7 @@ class _HomeState extends State<Home> {
                                                 ),
                                               ),
                                               Text(
-                                                  "Price: \₸${singleProduct.price}"),
+                                                  "Price: \$${singleProduct.price}"),
                                               const SizedBox(
                                                 height: 30.0,
                                               ),

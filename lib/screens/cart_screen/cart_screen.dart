@@ -40,7 +40,7 @@ class _CartScreenState extends State<CartScreen> {
                     ),
                   ),
                   Text(
-                    "\₸${appProvider.totalPrice().toString()}",
+                    "\$${appProvider.totalPrice().toString()}",
                     style: const TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
