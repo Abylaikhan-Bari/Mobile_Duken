@@ -12,7 +12,7 @@ import 'package:youtube_ecommerce/screens/custom_bottom_bar/custom_bottom_bar.da
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
    Stripe.publishableKey =
-  "pk_test_51MWx8OAVMyklfe3CsjEzA1CiiY0XBTlHYbZ8jQlGtVFIwQi4aNeGv8J1HUw4rgSavMTLzTwgn0XRlwoTVRFXyu2h00mRUeWmAf";
+  "pk_test_51MyaRZJoORLyqI9bdVEj1uJVNy47RuvBtmPpRtRQJFQKiZbcl1U5YOTLNAElPTJNJpxWKPdxUxvwN3t2TARMlDDj00tvp4lHvE";
   await Firebase.initializeApp(
     options: DefaultFirebaseConfig.platformOptions,
   );
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       create: (context) => AppProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Youtube E-Commerce',
+        title: 'Duken',
         theme: themeData,
         home: StreamBuilder(
           stream: FirebaseAuthHelper.instance.getAuthChange,

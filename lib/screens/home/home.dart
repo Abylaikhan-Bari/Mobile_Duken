@@ -78,7 +78,7 @@ class _HomeState extends State<Home> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const TopTitles(subtitle: "", title: "E Commerce"),
+                        const TopTitles(subtitle: "", title: "Duken"),
                         TextFormField(
                           controller: search,
                           onChanged: (String value) {
