@@ -12,11 +12,12 @@ import 'package:youtube_ecommerce/widgets/top_titles/top_titles.dart';
 import '../../models/product_model/product_model.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
 }
+
 
 class _HomeState extends State<Home> {
   List<CategoryModel> categoriesList = [];
@@ -277,7 +278,7 @@ class _HomeState extends State<Home> {
                                                 ),
                                               ),
                                               Text(
-                                                  "Price: \$${singleProduct.price}"),
+                                                  "Price: \₸${singleProduct.price}"),
                                               const SizedBox(
                                                 height: 30.0,
                                               ),

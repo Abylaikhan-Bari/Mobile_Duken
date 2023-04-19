@@ -124,7 +124,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 const SizedBox(
                   height: 12.0,
                 ),
-                const Text("Version 1.0.0")
+                //const Text("Version 1.0.0")
               ],
             ),
           ),
