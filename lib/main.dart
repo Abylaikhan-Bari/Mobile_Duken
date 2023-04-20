@@ -12,7 +12,7 @@ import 'package:youtube_ecommerce/screens/custom_bottom_bar/custom_bottom_bar.da
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
    Stripe.publishableKey =
-  "pk_test_51MyaRZJoORLyqI9bdVEj1uJVNy47RuvBtmPpRtRQJFQKiZbcl1U5YOTLNAElPTJNJpxWKPdxUxvwN3t2TARMlDDj00tvp4lHvE";
+  "sk_test_51MyaRZJoORLyqI9bazWVfsC6dfck9Sk70dQ68F5YBvA0loqJoW9H9PpvM8rijGQ5J6xdLnzBsToJIPtTOutjt7Eg00ecPCqyv2";
   await Firebase.initializeApp(
     options: DefaultFirebaseConfig.platformOptions,
   );
