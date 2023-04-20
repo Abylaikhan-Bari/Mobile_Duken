@@ -61,7 +61,7 @@ class FirebaseAuthHelper {
 
       // _firestore.collection("users").doc(userModel.id).set(userModel.toJson());
       Navigator.of(context,rootNavigator: true).pop();
-      showMessage("Password Changed");
+      showMessage("Password özgertıldı");
       Navigator.of(context).pop();
 
       return true;

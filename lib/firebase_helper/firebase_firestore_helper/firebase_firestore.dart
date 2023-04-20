@@ -105,7 +105,7 @@ class FirebaseFirestoreHelper {
         "orderId": documentReference.id,
       });
       Navigator.of(context, rootNavigator: true).pop();
-      showMessage("Ordered Successfully");
+      showMessage("Sättı tapsyrys berıldı");
       return true;
     } catch (e) {
       showMessage(e.toString());
