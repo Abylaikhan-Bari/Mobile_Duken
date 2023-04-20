@@ -45,7 +45,7 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
         PersistentBottomNavBarItem(
           icon: const Icon(Icons.circle_rounded),
           inactiveIcon: const Icon(Icons.circle_outlined),
-          title: "Orders",
+          title: "Tapsyrystar",
           activeColorPrimary: Colors.white,
           inactiveColorPrimary: Colors.white,
         ),

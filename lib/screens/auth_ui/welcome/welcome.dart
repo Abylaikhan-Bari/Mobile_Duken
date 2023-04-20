@@ -19,7 +19,7 @@ class Welcome extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const TopTitles(
-                subtitle: "Buy AnyItems From Using App ", title: "Welcome"),
+                subtitle: "Kez kelgen zattardy satyp alyñyz ", title: "Qoş keldıñız"),
             Center(
               child: Image.asset(
                 AssetsImages.instance.welcomeImage,
@@ -54,7 +54,7 @@ class Welcome extends StatelessWidget {
               height: 30.0,
             ),
             PrimaryButton(
-              title: "Login",
+              title: "Kıru",
               onPressed: () {
                 Routes.instance.push(widget: const Login(), context: context);
               },
@@ -63,7 +63,7 @@ class Welcome extends StatelessWidget {
               height: 18.0,
             ),
             PrimaryButton(
-              title: "Sign Up",
+              title: "Tırkelu",
               onPressed: () {
                 Routes.instance.push(widget: const SignUp(), context: context);
               },

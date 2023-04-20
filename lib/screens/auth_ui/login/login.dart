@@ -33,7 +33,7 @@ class _LoginState extends State<Login> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const TopTitles(
-                  subtitle: "Welcome Back To E Commerce App", title: "Login"),
+                  subtitle: "Düken qoldanbasyna qoş keldıñız", title: "Login"),
               const SizedBox(
                 height: 46.0,
               ),
@@ -76,7 +76,7 @@ class _LoginState extends State<Login> {
                 height: 36.0,
               ),
               PrimaryButton(
-                title: "Login",
+                title: "Kıru",
                 onPressed: () async {
                   bool isVaildated = loginVaildation(email.text, password.text);
                   if (isVaildated) {
@@ -92,7 +92,7 @@ class _LoginState extends State<Login> {
               const SizedBox(
                 height: 24.0,
               ),
-              const Center(child: Text("Don't have an account?")),
+              const Center(child: Text("Eseptık jazbañyz joq pa?")),
               const SizedBox(
                 height: 12.0,
               ),
@@ -103,7 +103,7 @@ class _LoginState extends State<Login> {
                         .push(widget: const SignUp(), context: context);
                   },
                   child: Text(
-                    "Create an account",
+                    "Jaña akaunt qūru",
                     style: TextStyle(color: Theme.of(context).primaryColor),
                   ),
                 ),

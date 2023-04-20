@@ -67,10 +67,10 @@ class _SingleFavouriteItemState extends State<SingleFavouriteItem> {
                                         listen: false);
                                 appProvider
                                     .removeFavouriteProduct(widget.singleProduct);
-                                showMessage("Removed to wishlist");
+                                showMessage("Qalaular tızımınen joiyldy");
                               },
                               child: const Text(
-                                "Remove to wishlist",
+                                "Qalaular tızımınen joiu",
                                 style: TextStyle(
                                   fontSize: 12.0,
                                   fontWeight: FontWeight.bold,

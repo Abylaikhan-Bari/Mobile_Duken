@@ -134,9 +134,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ProductModel productModel =
                           widget.singleProduct.copyWith(qty: qty);
                       appProvider.addCartProduct(productModel);
-                      showMessage("Added to Cart");
+                      showMessage("Sebetke qosyldy");
                     },
-                    child: const Text("ADD TO CART"),
+                    child: const Text("SEBETKE QOSU"),
                   ),
                   const SizedBox(
                     width: 24.0,
@@ -152,7 +152,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                             widget: Checkout(singleProduct: productModel),
                             context: context);
                       },
-                      child: const Text("BUY"),
+                      child: const Text("Satyp alu"),
                     ),
                   ),
                 ],

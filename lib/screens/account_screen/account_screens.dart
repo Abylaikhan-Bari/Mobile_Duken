@@ -66,7 +66,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 SizedBox(
                   width: 130,
                   child: PrimaryButton(
-                    title: "Edit Profile",
+                    title: "Özgertu",
                     onPressed: () {
                       Routes.instance
                           .push(widget: const EditProfile(), context: context);
@@ -86,7 +86,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         .push(widget: const OrderScreen(), context: context);
                   },
                   leading: const Icon(Icons.shopping_bag_outlined),
-                  title: const Text("Your Orders"),
+                  title: const Text("Sızdıñ tapsyrystaryñyz"),
                 ),
                 ListTile(
                   onTap: () {
@@ -94,7 +94,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         widget: const FavouriteScreen(), context: context);
                   },
                   leading: const Icon(Icons.favorite_outline),
-                  title: const Text("Favourite"),
+                  title: const Text("Tañdauly"),
                 ),
                 ListTile(
                   onTap: () {
@@ -102,7 +102,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         .push(widget: const AboutUs(), context: context);
                   },
                   leading: const Icon(Icons.info_outline),
-                  title: const Text("About us"),
+                  title: const Text("Bız turaly"),
                 ),
                 ListTile(
                   onTap: () {
@@ -110,7 +110,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         .push(widget: const ChangePassword(), context: context);
                   },
                   leading: const Icon(Icons.change_circle_outlined),
-                  title: const Text("Change Password"),
+                  title: const Text("Qūpia sözdı özgertu"),
                 ),
                 ListTile(
                   onTap: () {
@@ -119,7 +119,7 @@ class _AccountScreenState extends State<AccountScreen> {
                     setState(() {});
                   },
                   leading: const Icon(Icons.exit_to_app),
-                  title: const Text("Log out"),
+                  title: const Text("Şyğu"),
                 ),
                 const SizedBox(
                   height: 12.0,

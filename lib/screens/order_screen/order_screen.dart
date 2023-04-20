@@ -12,7 +12,7 @@ class OrderScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: const Text(
-          "Your Orders",
+          "Sızdıñ tapsyrystaryñyz",
           style: TextStyle(
             color: Colors.black,
           ),
@@ -31,7 +31,7 @@ class OrderScreen extends StatelessWidget {
               snapshot.data == null ||
               !snapshot.hasData) {
             return const Center(
-              child: Text("No Order Found"),
+              child: Text("Tapsyrys tabylmady"),
             );
           }
           
@@ -81,7 +81,7 @@ class OrderScreen extends StatelessWidget {
                                   : Column(
                                       children: [
                                         Text(
-                                          "Quanity: ${orderModel.products[0].qty.toString()}",
+                                          "Sany: ${orderModel.products[0].qty.toString()}",
                                           style: const TextStyle(
                                             fontSize: 12.0,
                                           ),
@@ -92,7 +92,7 @@ class OrderScreen extends StatelessWidget {
                                       ],
                                     ),
                               Text(
-                                "Total Price: \$${orderModel.totalPrice.toString()}",
+                                "Jalpy bağa: \₸${orderModel.totalPrice.toString()}",
                                 style: const TextStyle(
                                   fontSize: 12.0,
                                 ),
@@ -101,7 +101,7 @@ class OrderScreen extends StatelessWidget {
                                 height: 12.0,
                               ),
                               Text(
-                                "Order Status: ${orderModel.status}",
+                                "Tapsyrys küiı: ${orderModel.status}",
                                 style: const TextStyle(
                                   fontSize: 12.0,
                                 ),
@@ -113,7 +113,7 @@ class OrderScreen extends StatelessWidget {
                     ),
                     children: orderModel.products.length > 1
                         ? [
-                            const Text("Details"),
+                            const Text("Tolyğyraq"),
                              Divider(color:Theme.of(context).primaryColor),
                             ...orderModel.products.map((singleProduct) {
                               return Padding(
@@ -152,7 +152,7 @@ class OrderScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    "Quanity: ${singleProduct.qty.toString()}",
+                                                    "Sany: ${singleProduct.qty.toString()}",
                                                     style: const TextStyle(
                                                       fontSize: 12.0,
                                                     ),
@@ -163,7 +163,7 @@ class OrderScreen extends StatelessWidget {
                                                 ],
                                               ),
                                               Text(
-                                                "Price: \$${singleProduct.price.toString()}",
+                                                "Bağasy: \₸${singleProduct.price.toString()}",
                                                 style: const TextStyle(
                                                   fontSize: 12.0,
                                                 ),

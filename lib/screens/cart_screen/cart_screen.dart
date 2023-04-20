@@ -33,7 +33,7 @@ class _CartScreenState extends State<CartScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    "Total",
+                    "Barlyğy",
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ class _CartScreenState extends State<CartScreen> {
                   appProvider.addBuyProductCartList();
                   appProvider.clearCart();
                   if (appProvider.getBuyProductList.isEmpty) {
-                    showMessage("Cart is empty");
+                    showMessage("Sebet bos");
                   } else {
                     Routes.instance.push(
                         widget: const CartItemCheckout(), context: context);
@@ -81,7 +81,7 @@ class _CartScreenState extends State<CartScreen> {
       ),
       body: appProvider.getCartProductList.isEmpty
           ? const Center(
-              child: Text("Empty"),
+              child: Text("Eşteñe joq"),
             )
           : ListView.builder(
               itemCount: appProvider.getCartProductList.length,

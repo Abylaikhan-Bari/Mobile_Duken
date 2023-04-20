@@ -77,7 +77,7 @@ class _EditProfileState extends State<EditProfile> {
             height: 24.0,
           ),
           PrimaryButton(
-            title: "Update",
+            title: "Jañartu",
             onPressed: () async {
               UserModel userModel = appProvider.getUserInformation
                   .copyWith(name: textEditingController.text);

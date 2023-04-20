@@ -70,7 +70,7 @@ class _CategoryViewState extends State<CategoryView> {
                   ),
                   productModelList.isEmpty
                       ? const Center(
-                          child: Text("Best Product is empty"),
+                          child: Text("Üzdık tauarlar joq"),
                         )
                       : Padding(
                           padding: const EdgeInsets.all(12.0),
@@ -113,7 +113,7 @@ class _CategoryViewState extends State<CategoryView> {
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      Text("Price: \$${singleProduct.price}"),
+                                      Text("Bağasy: \$${singleProduct.price}"),
                                       const SizedBox(
                                         height: 30.0,
                                       ),
@@ -129,7 +129,7 @@ class _CategoryViewState extends State<CategoryView> {
                                                 context: context);
                                           },
                                           child: const Text(
-                                            "Buy",
+                                            "Satyp alu",
                                           ),
                                         ),
                                       ),

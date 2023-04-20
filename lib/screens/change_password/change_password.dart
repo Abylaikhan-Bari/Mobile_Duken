@@ -23,7 +23,7 @@ class _ChangePasswordState extends State<ChangePassword> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text(
-          "Change Password",
+          "Qūpia sözdı özgertu",
           style: TextStyle(
             color: Colors.black,
           ),
@@ -36,7 +36,7 @@ class _ChangePasswordState extends State<ChangePassword> {
             controller: newpassword,
             obscureText: isShowPassword,
             decoration: InputDecoration(
-              hintText: "New Password",
+              hintText: "Jaña qūpia söz",
               prefixIcon: const Icon(
                 Icons.password_sharp,
               ),
@@ -60,7 +60,7 @@ class _ChangePasswordState extends State<ChangePassword> {
             controller: confirmpassword,
             obscureText: isShowPassword,
             decoration: const InputDecoration(
-              hintText: "Confrim Password",
+              hintText: "Qūpia sözdı rastau",
               prefixIcon: Icon(
                 Icons.password_sharp,
               ),
@@ -71,17 +71,17 @@ class _ChangePasswordState extends State<ChangePassword> {
             height: 36.0,
           ),
           PrimaryButton(
-            title: "Update",
+            title: "Jañartu",
             onPressed: () async {
               if (newpassword.text.isEmpty) {
-                showMessage("New Password is empty");
+                showMessage("Jaña qūpia söz bos");
               } else if (confirmpassword.text.isEmpty) {
-                showMessage("Confirm Password is empty");
+                showMessage("Qūpia sözdıñ bos ekenın rastañyz");
               } else if (confirmpassword.text == newpassword.text) {
                 FirebaseAuthHelper.instance
                     .changePassword(newpassword.text, context);
               } else {
-                showMessage("Confrim Password is not match");
+                showMessage("Qūpia söz säikes emes ekendıgın rastañyz ");
               }
             },
           ),

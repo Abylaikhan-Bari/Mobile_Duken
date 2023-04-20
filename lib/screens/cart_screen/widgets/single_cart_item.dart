@@ -119,18 +119,18 @@ class _SingleCartItemState extends State<SingleCartItem> {
                                     .contains(widget.singleProduct)) {
                                   appProvider.addFavouriteProduct(
                                       widget.singleProduct);
-                                  showMessage("Added to wishlist");
+                                  showMessage("Qalaular tızımıne qosyldy");
                                 } else {
                                   appProvider.removeFavouriteProduct(
                                       widget.singleProduct);
-                                  showMessage("Removed to wishlist");
+                                  showMessage("Qalaular tızımınen joiyldy");
                                 }
                               },
                               child: Text(
                                 appProvider.getFavouriteProductList
                                         .contains(widget.singleProduct)
-                                    ? "Remove to wishlist"
-                                    : "Add to wishlist",
+                                    ? "Qalaular tızımınen joiu"
+                                    : "Qalaular tızımıne qosu",
                                 style: const TextStyle(
                                   fontSize: 12.0,
                                   fontWeight: FontWeight.bold,
@@ -140,7 +140,7 @@ class _SingleCartItemState extends State<SingleCartItem> {
                           ],
                         ),
                         Text(
-                          "\$${widget.singleProduct.price.toString()}",
+                          "\₸${widget.singleProduct.price.toString()}",
                           style: const TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.bold,
@@ -152,7 +152,7 @@ class _SingleCartItemState extends State<SingleCartItem> {
                         padding: EdgeInsets.zero,
                         onPressed: () {
                           appProvider.removeCartProduct(widget.singleProduct);
-                          showMessage("Removed from Cart");
+                          showMessage("Sebetten joiyldy");
                         },
                         child: const CircleAvatar(
                           maxRadius: 13,

@@ -34,8 +34,8 @@ class _SignUpState extends State<SignUp> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const TopTitles(
-                  subtitle: "Welcome Back To E Commerce App",
-                  title: "Create Account"),
+                  subtitle: "Düken qoldanbasyna qoş keldıñız",
+                  title: "Jaña akaunt qūru"),
               const SizedBox(
                 height: 46.0,
               ),
@@ -102,7 +102,7 @@ class _SignUpState extends State<SignUp> {
                 height: 36.0,
               ),
               PrimaryButton(
-                title: "Create an account",
+                title: "Akaunt qūru",
                 onPressed: () async {
                   bool isVaildated = signUpVaildation(
                       email.text, password.text, name.text, phone.text);
@@ -119,7 +119,7 @@ class _SignUpState extends State<SignUp> {
               const SizedBox(
                 height: 24.0,
               ),
-              const Center(child: Text("I have already an account?")),
+              const Center(child: Text("Menıñ akauntym bar.")),
               const SizedBox(
                 height: 12.0,
               ),
@@ -129,7 +129,7 @@ class _SignUpState extends State<SignUp> {
                     Navigator.of(context).pop();
                   },
                   child: Text(
-                    "Login",
+                    "Kıru",
                     style: TextStyle(color: Theme.of(context).primaryColor),
                   ),
                 ),

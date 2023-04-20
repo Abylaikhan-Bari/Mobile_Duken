@@ -86,13 +86,13 @@ class _HomeState extends State<Home> {
                             searchProducts(value);
                           },
                           decoration:
-                              const InputDecoration(hintText: "Search...."),
+                              const InputDecoration(hintText: "Izdeu...."),
                         ),
                         const SizedBox(
                           height: 24.0,
                         ),
                         const Text(
-                          "Categories",
+                          "Sanattar",
                           style: TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
                   ),
                   categoriesList.isEmpty
                       ? const Center(
-                          child: Text("Categories is empty"),
+                          child: Text("Sanattar bos"),
                         )
                       : SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
@@ -146,7 +146,7 @@ class _HomeState extends State<Home> {
                       ? const Padding(
                           padding: EdgeInsets.only(top: 12.0, left: 12.0),
                           child: Text(
-                            "Best Products",
+                            "Üzdık tauarlar",
                             style: TextStyle(
                               fontSize: 18.0,
                               fontWeight: FontWeight.bold,
@@ -159,7 +159,7 @@ class _HomeState extends State<Home> {
                   ),
                   search.text.isNotEmpty && searchList.isEmpty
                       ? const Center(
-                          child: Text("No Product Found"),
+                          child: Text("Tauar tabylmady"),
                         )
                       : searchList.isNotEmpty
                           ? Padding(
@@ -205,7 +205,7 @@ class _HomeState extends State<Home> {
                                             ),
                                           ),
                                           Text(
-                                              "Price: \$${singleProduct.price}"),
+                                              "Bağasy: \₸${singleProduct.price}"),
                                           const SizedBox(
                                             height: 30.0,
                                           ),
@@ -221,7 +221,7 @@ class _HomeState extends State<Home> {
                                                     context: context);
                                               },
                                               child: const Text(
-                                                "Buy",
+                                                "Satyp alu",
                                               ),
                                             ),
                                           ),
@@ -232,7 +232,7 @@ class _HomeState extends State<Home> {
                             )
                           : productModelList.isEmpty
                               ? const Center(
-                                  child: Text("Best Product is empty"),
+                                  child: Text("Üzdık tauarlar joq"),
                                 )
                               : Padding(
                                   padding: const EdgeInsets.all(12.0),
@@ -278,7 +278,7 @@ class _HomeState extends State<Home> {
                                                 ),
                                               ),
                                               Text(
-                                                  "Price: \$${singleProduct.price}"),
+                                                  "Bağasy: \₸${singleProduct.price}"),
                                               const SizedBox(
                                                 height: 30.0,
                                               ),
@@ -294,7 +294,7 @@ class _HomeState extends State<Home> {
                                                         context: context);
                                                   },
                                                   child: const Text(
-                                                    "Buy",
+                                                    "Satyp alu",
                                                   ),
                                                 ),
                                               ),

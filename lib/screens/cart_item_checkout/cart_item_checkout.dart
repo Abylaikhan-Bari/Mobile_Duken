@@ -31,7 +31,7 @@ class _CartItemCheckoutState extends State<CartItemCheckout> {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: const Text(
-          "CartItemCheckout",
+          "Sebetten Checkout",
           style: TextStyle(
             color: Colors.black,
           ),
@@ -67,7 +67,7 @@ class _CartItemCheckoutState extends State<CartItemCheckout> {
                     width: 12.0,
                   ),
                   const Text(
-                    "Cash on Delivery",
+                    "Qolma-qol aqşamen töleu",
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -102,7 +102,7 @@ class _CartItemCheckoutState extends State<CartItemCheckout> {
                     width: 12.0,
                   ),
                   const Text(
-                    "Pay Online",
+                    "Onlain töleu (Stripe)",
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -115,14 +115,14 @@ class _CartItemCheckoutState extends State<CartItemCheckout> {
               height: 24.0,
             ),
             PrimaryButton(
-              title: "Continues",
+              title: "Jalğastyru",
               onPressed: () async {
                 if (groupValue == 1) {
                   bool value = await FirebaseFirestoreHelper.instance
                       .uploadOrderedProductFirebase(
                           appProvider.getBuyProductList,
                           context,
-                          "Cash on delivery");
+                          "Qolma-qol aqşamen töleu");
 
                   appProvider.clearBuyProduct();
                   if (value) {

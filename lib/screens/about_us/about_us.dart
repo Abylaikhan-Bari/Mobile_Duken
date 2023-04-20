@@ -10,7 +10,7 @@ class AboutUs extends StatelessWidget {
         centerTitle: true,
         // backgroundColor: Colo,
         title: const Text(
-          "About Us",
+          "Bız turaly",
           style: TextStyle(
             color: Colors.black,
           ),

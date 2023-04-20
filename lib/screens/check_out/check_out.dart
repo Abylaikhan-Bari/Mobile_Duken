@@ -65,7 +65,7 @@ class _CheckoutState extends State<Checkout> {
                     width: 12.0,
                   ),
                   const Text(
-                    "Cash on Delivery",
+                    "Qolma-qol aqşamen töleu",
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -100,7 +100,7 @@ class _CheckoutState extends State<Checkout> {
                     width: 12.0,
                   ),
                   const Text(
-                    "Pay Online",
+                    "Onlain töleu (Stripe)",
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -113,7 +113,7 @@ class _CheckoutState extends State<Checkout> {
               height: 24.0,
             ),
             PrimaryButton(
-              title: "Continues",
+              title: "Jalğastyru",
               onPressed: () async {
                 appProvider.clearBuyProduct();
                 appProvider.addBuyProduct(widget.singleProduct);
@@ -123,7 +123,7 @@ class _CheckoutState extends State<Checkout> {
                       .uploadOrderedProductFirebase(
                           appProvider.getBuyProductList,
                           context,
-                          "Cash on delivery");
+                          "Qolma-qol aqşamen töleu");
 
                   appProvider.clearBuyProduct();
                   if (value) {
